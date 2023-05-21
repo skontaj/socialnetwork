@@ -1,0 +1,8 @@
+input {
+    padding:5px;
+    margin-top: 10px;
+}
+.container ul li {
+    display: inline-block;
+    text-transform: uppercase;
+}

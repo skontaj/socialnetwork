@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  }
+body {
+  background-color: rgb(250, 250, 250);
+}
+button {
+  background-color: transparent;
+  border: 2px solid rgb(250, 250, 250);
+  color: rgb(250, 250, 250);
+}
+button:hover {
+  background-color: rgb(250, 250, 250);
+  border: 2px solid rgb(0,128,255);
+  color: rgb(0,128,255);
+  transition: 0.7s;
+}
+.input-objava input {
+  background-color: transparent;
+  border: 2px solid rgb(250, 250, 250);
+  color: rgb(250, 250, 250);
+}
+.input-objava input:hover {
+  background-color: rgb(250, 250, 250);
+  border: 2px solid rgb(0,128,255);
+  color: rgb(0,128,255);
+  transition: 0.7s;
+}
+.left-side {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(0,128,255);
+  top: 10px;
+  position: sticky;
+}
+.left-side p {
+  color: rgb(250, 250, 250);
+}
+.user-img img {
+  height: 120px;
+  width: 120px;
+  clip-path: circle();
+}
+.right-side {
+  padding: 15px;
+  background-color: rgb(0,128,255);
+}
+.right-side .input-objava {
+  height: 90px;
+  display: flex;
+}
+#postSadrzaj {
+  width: 80%;
+  border: 0;
+  background-color: rgb(250, 250, 250);
+  padding: 10px;
+  resize: none;
+  outline-color: blue;
+}
+.right-side input {
+  width: 20%;
+}
+#chProfil {
+  padding: 10px;
+}
+#logout {
+  padding: 10px;
+  margin-top: 5px;
+}
+#logout a {
+  text-decoration: none;
+  color: rgb(250, 250, 250);
+}
+#logout:hover {
+  background-color: rgb(250, 250, 250);
+  border: 2px solid rgb(0,128,255);
+  transition: 0.7s;
+}
+#logout:hover a {
+  color: rgb(0,128,255)!important;
+}
+
+/* popUp */
+
+.overlay {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.popup {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 5%;
+	z-index: 200;
+	width: 90%;
+	padding-bottom: 10px;
+	margin: auto;
+	background-color: #fff;
+	background-color: rgb(0,128,255);
+	padding: 20px;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+	overflow-y: scroll !important;
+	max-height: 90%;
+}
+.popup .x button {
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  background-color: transparent;
+  font-weight: bold;
+  border: 0;
+  color: white;
+}
+.izmjeniProfil h1 {
+	text-align: center;
+	margin-bottom: 15px;
+	font-size: 30px;
+}
+
+.izmjeniProfil h2 {
+	margin-bottom: 15px;
+}
+
+.izmjeniProfil h3 {
+	margin-bottom: 15px;
+}
+
+.izmjeniProfil {
+	max-width: 600px;
+	margin: auto;
+	margin-top: 60px;
+}
+
+.izmjeniProfil div {
+	padding: 15px 0;
+}
+
+.izmjeniProfil div label {
+	display: block;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.izmjeniProfil div input {
+	height: 50px;
+	width: 100%;
+	font-size: 18px;
+	padding: 0 10px;
+	border: 0;
+	background-color: rgb(250, 250, 250)
+}
+.izmjeniProfil ul {
+	list-style: none;
+}
+
+.izmjeniProfil ul li {
+	color: red;
+}
+#izmjeni {
+  padding: 10px;
+}
+#obrisi {
+  padding: 10px;
+  margin-top: 10px;
+}
+.popupBtns {
+  text-align: center;
+}
+.single-post {
+  margin-top: 15px;
+  background-color: rgb(250, 250, 250);
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+#username-post {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.single-post .hide-form input {
+  width: 80%;
+  background-color: rgb(250, 250, 250);
+  padding: 10px;
+  resize: none;
+  border: 2px solid rgb(0,128,255);
+  height: 35px;
+}
+.single-post .hide-form button {
+  width: 20%;
+  border: 2px solid rgb(0,128,255);
+  color: rgb(0,128,255);
+  height: 35px;
+}
+.single-post .hide-form {
+  display: none;
+}
+.single-post form button:hover{
+  color: rgb(250,250,250);
+  background-color: rgb(0,128,255);
+}
+.likes-comment-delete-btn {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.btn-primary {
+  border: 2px solid rgb(0,128,255);
+  color: rgb(0,128,255);
+  height: 27px;
+  margin-bottom: 5px;
+}
+.comment-post-btn {
+  border: 2px solid rgb(0, 128, 255);
+  color: rgb(0, 128, 255);
+  height: 27px;
+}
+.btn-primary:hover{
+  color: rgb(250,250,250);
+  background-color: rgb(0,128,255);
+}
+.comment-post-btn:hover {
+  color: rgb(250, 250, 250);
+  background-color: rgb(0, 128, 255);
+}
+.remove-btn {
+  border: 2px solid rgb(0,128,255);
+  color: rgb(0,128,255);
+  float: right;
+  margin-top: -27px;
+}
+.remove-btn:hover {
+  color: rgb(250, 250, 250);
+  background-color: rgb(0, 128, 255);
+}
+.likes-comment-delete-btn button {
+  width: 120px;
+}
+.single-comment {
+  border: 1px solid rgb(0, 128, 255);
+  padding: 10px;
+  margin-top: 10px;
+}
+#uploadFile {
+  margin-top: 20px;
+  text-align: center;
+}
+#uploadFile button {
+  padding: 10px;
+  margin-top: 15px;
+}
+.post-comments {
+  display: none;
+  margin-top: 20px;
+}
+.single_comm {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 10px;
+  margin-top: 10px;
+  height: auto;
+}
+.removeComm {
+ text-align: right
+}
+#username-post img {
+  height: 45px;
+  width: 45px;
+  clip-path: circle();
+}
+.inline {
+  display: inline-block;
+}
+.inline p {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.post-comments img {
+    height: 30px;
+    width: 30px;
+    clip-path: circle();
+    margin-right: 10px;
+}
+.footer {
+  text-align: center;
+}
