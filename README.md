@@ -1,8 +1,10 @@
-https://socialnetwork.codetricks.online/
+
 
 ## Social Network
 
 Welcome to Social Network! This is an open-source social networking project that allows you to connect and share content with friends.
+
+Link: https://socialnetwork.codetricks.online/
 
 ### Features
 
